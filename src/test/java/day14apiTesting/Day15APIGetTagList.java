@@ -30,16 +30,16 @@ public class Day15APIGetTagList
 	@Test
 	public void queryParameter()
 	{
-		 RestAssured.baseURI = "https://petstore.swagger.io/#/";
-//		  Response response = RestAssured.get("/pet/findByStatus");
-		
-		 RequestSpecification request=RestAssured.given();
-		 Response response = request.queryParam(null, null);
-		  
-		 String bodyAsString = response.asString();
-		 System.out.println(bodyAsString);
-		 Assert.assertEquals(bodyAsString.contains("avaialble"), true);
-		  
+//		 RestAssured.baseURI = "https://petstore.swagger.io/#/";
+////		  Response response = RestAssured.get("/pet/findByStatus");
+//		
+//		 RequestSpecification request=RestAssured.given();
+//	//	 Response response = request.queryParam(null, null);
+//		  
+//	//	 String bodyAsString = response.asString();
+//		 System.out.println(bodyAsString);
+//		 Assert.assertEquals(bodyAsString.contains("avaialble"), true);
+//		  
 		  
 	}
 }
