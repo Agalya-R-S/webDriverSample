@@ -1,0 +1,12 @@
+name: SampleSuite
+configFailurePolicy: skip
+tests:
+  - name: ModuleOneTest
+  includedGroups: [ smokeTest ]
+  classes:
+    - TestScript.WebTableTest
+    - TestScript.HiddenElement
+    - TestScript.FirstSampleTest
+    - TestScript.AlrtBox
+    - TestScript.Buttons
+

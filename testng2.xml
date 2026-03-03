@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SampleSuite">
+<!--<parameter name="browser" value="Chorme"/> -->	
+  <test thread-count="5" name="ModuleOneTest">
+	 
+	  <groups>
+		  <define name="PhaseOne">
+			  <include name="smokeTest"></include>	
+			   <include name="sanityTest"></include>		  
+		  </define>
+		  
+		  <run>
+			<include name="smokeTest"></include>			  
+		  </run>
+		  
+	  </groups>
+	  
+    <classes>
+		<class name="TestScript.WebTableTest"/>
+      	<class name="TestScript.HiddenElement"/>
+      	<class name="TestScript.FirstSampleTest"/>
+      	<class name="TestScript.AlrtBox"/>
+        <class name="TestScript.Buttons"/>
+     </classes>
+  </test> <!-- ModuleOneTest -->
+</suite> <!-- SampleSuite -->
